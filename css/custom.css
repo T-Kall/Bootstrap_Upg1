@@ -1,0 +1,454 @@
+
+/* CSS Google Font */
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
+:root {
+    --blue:       #1487FD;
+    --orange:     #FFBB00;
+    --gray:       #8A8A8A; 
+    --lightgray:  #F5F5F5;
+    --white:      #ffffff;
+    --black:      #333333;
+
+}
+
+.border {
+  border: 2px solid red; /* endast för test */
+  }
+
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.9rem;
+  color: var(--black);
+  background-color: var(--white);
+
+}
+
+
+/* text */
+
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  line-height: 3.5rem;
+}
+
+ h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  line-height: 3.5rem;
+}
+
+h1, .h1 {
+  font-size: 2.8rem;
+}
+
+h2, .h2 {
+  font-size: 2.2rem;
+}
+
+h3, .h3 {
+  font-size: 1.9rem;
+}
+
+h4, .h4 {
+  font-size: 1.5rem;
+}
+
+h5, .h5 {
+  font-size: 1.25rem;
+}
+
+h6, .h6 {
+  font-size: 1rem;
+}
+
+
+
+/* buttons */
+
+button,
+.btn,
+.btn_form {
+  font-family: 'Roboto', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 300;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  line-height: 1.5;
+  border: 1px solid transparent;
+  cursor: pointer;
+  outline: 0;
+  border-radius: 0.5rem;
+  -webkit-border-radius: 0.7rem;
+  -moz-border-radius: 0.5rem;
+  -ms-border-radius: 0.5rem;
+  -o-border-radius: 0.5rem;
+  transition: all 0.5s ease 0s ;
+  padding: .6rem 1.75rem;
+}
+
+.dot {
+  height: 0.6rem;
+  width: 0.6rem;
+  background-color: var(--orange);
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 0.2rem;
+}
+
+/* ------------------------- */
+/*   Start   */
+/* ------------------------- */
+
+#home {
+  background-image: url('../img/bgTop.png');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+/* ------------------------- */
+/*   NAVBAR   */
+/* ------------------------- */
+
+
+.navbar {
+  padding: 1rem 1rem; /* Padding runt hela menyn*/
+}
+
+
+.bg-light {
+  background-color: transparent !important;
+}
+
+.navbar-brand,
+.footer-brand {
+      font-family: 'Poppins', sans-serif;
+      font-size: 2rem;
+      font-weight: 700;
+      color: var(--white);
+}
+
+.navbar-dark .navbar-brand {
+  color: var(--white);
+}
+
+.navbar li a { 
+  font-size: 1.05rem;
+  font-weight: 400; 
+  text-decoration: none;
+} 
+
+.navbar-dark .navbar-brand:hover, 
+.navbar-dark .navbar-brand:focus {
+  color: var(--white);
+  text-decoration: none;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: var(--white);  
+  border-bottom: 2px solid transparent
+}
+
+.navbar-dark .navbar-nav .nav-link.active
+ {
+  color: var(--orange);
+}
+
+ .navbar-dark .navbar-nav .nav-link:hover {
+  color: var(--orange);
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: 0rem;
+  padding-left: 0rem;
+  margin-right: 3rem;
+}
+ 
+/* navbar button */
+
+.navbar .btn {
+  display: inline-block;
+  color: var(--white); 
+  background-color:  var(--orange); 
+}
+
+.navbar .btn:hover {
+  background-color: var(--blue);
+  border: 1px solid transparent;
+  outline: 0;  
+}
+
+/* ------------------------- */
+/*   TOPCONTENT   */
+/* ------------------------- */
+
+#topContent {
+font-family: 'Poppins', sans-serif; 
+ font-size: 16px;
+ font-weight: 400;
+ line-height: 1.5;
+ color: var(--white);
+}
+
+#topContent .btn {
+  display: inline-block;
+  color: var(--white); 
+  background-color:  transparent; 
+  border: 2px solid white; 
+}
+
+
+#topContent .btn:hover {
+  color: var(--white); 
+  background-color: var(--orange);
+  border: 2px solid white;
+  outline: 0;  
+}
+
+
+#topContent a {
+  display: inline-block;
+  color: var(--white); 
+  cursor: pointer;
+}
+
+
+#topContent a:hover {
+ color: var(--orange);
+ text-decoration: none;
+}
+
+.topShadow {
+  filter: drop-shadow(2px 20px 10px #2222222c) ;
+  -webkit-filter: drop-shadow(2px 20px 10px #2222222c) ;
+}
+
+
+
+/* ------------------------- */
+/* LOGOS and ABOUT */
+/* ------------------------- */
+
+
+/* ------------------------- */
+/* FEATURES */
+/* ------------------------- */
+
+
+#featureContent .img {
+  width: 100%;
+  height: auto;
+}
+
+.bg-features {
+  background-color:  var(--lightgray) !important;
+}
+
+
+
+/* ------------------------- */
+/* APPLICATION */
+/* ------------------------- */
+
+  /* features */
+  .bg-statistics {
+    background: url('/img/bgMap.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  
+  }
+
+#stat h3 {
+color: var(--blue);
+ }
+
+ #stat p {
+  font-size: 1.3rem;
+  font-weight: 600;
+ }
+
+
+/* ------------------------- */
+/* DOWNLOAD */
+/* ------------------------- */
+
+#download p,
+#download h2 {
+  color: var(--white);
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.background-download {
+  width: 100%;
+  background-image: url('/img/bgDownload.png');
+}
+
+.background-download {  
+  background-size: cover;
+}
+
+/* ------------------------- */
+/* Contact FORM */
+/* ------------------------- */
+
+input,
+textarea  {
+  background-color: var(--lightgray) !important; 
+} 
+
+form .btn { 
+  color: var(--white);
+  background-color:  var(--blue);
+  padding: .6rem 4.5rem;  
+}
+
+form .btn:hover {
+  background-color: var(--orange);
+  color: var(--white);
+  outline: 0;
+}
+
+.form-control {
+  border-radius: 0.7rem;
+  width: 100%;
+  height:3.5rem;
+  padding: 0.4rem 1.2rem;
+  font-size: 0.8rem;
+  -webkit-border-radius: 0.7rem;
+  -moz-border-radius: 0.7rem;
+  -ms-border-radius: 0.7rem;
+  -o-border-radius: 0.7rem;
+}
+
+
+/* ------------------------- */
+/* FOOTER */
+/* ------------------------- */
+
+.background-footer {
+  width: 100%;
+  background-image: url('/img/bgFooter.png');
+  color: var(--white);
+}
+
+.background-container-footer {  
+  background-size: cover;
+}
+
+footer {
+  margin: 0 auto; /* mx-auto funkade inte */
+}
+
+footer .nav-link {
+  color:  var(--white);
+}
+
+footer .nav-link:hover {
+  color: var(--orange);
+}
+
+
+
+
+/* ----------------------------------------- */
+/* MEDIA sm */
+/* ----------------------------------------- */
+
+@media (min-width: 576px) {
+  .container, .container-sm {
+    max-width: 540px;
+  }
+}
+
+/* ----------------------------------------- */
+/* MEDIA sm-md */
+/* ----------------------------------------- */
+
+@media (min-width: 768px) {
+  .container, .container-sm, .container-md {
+    max-width: 720px;
+  }  
+}
+
+/* ----------------------------------------- */
+/* MEDIA sm-lg */
+/* ----------------------------------------- */
+
+@media (min-width: 992px) {
+  .container, .container-sm, .container-md, .container-lg {
+    max-width: 960px;
+  }
+
+  .navbar-dark .navbar-nav .nav-link::after {
+    color: var(--white);
+    content: '';
+    display: block;
+    position: relative;
+    padding-top:0.2rem;
+    width: 70%;
+    left: 0;
+    border-bottom: 2px solid transparent
+  }
+
+  .navbar-dark .navbar-nav .nav-link.active::after  {
+    content: '';
+    display: block;
+    position: relative;
+    padding-top:0.2rem;
+    width: 70%;
+    left: 0;
+    border-bottom: 2px solid var(--orange);
+  }
+
+  .navbar-dark .navbar-nav .nav-link:hover::after {
+    content: '';
+    display: block;
+    position: relative;
+    padding-top:0.2rem;
+    width: 70%;
+    left: 0;
+    border-bottom: 2px solid var(--orange);
+  }
+  
+  /* ------------------------- */
+  /* FEATURES */
+  /* ------------------------- */
+
+  .bg-features {
+    background: url('/img/bgFeature.png');
+    background-repeat: no-repeat;
+    background-position: left;
+    background-color:  var(--lightgrey);
+  }
+
+  
+}
+
+/* ----------------------------------------- */
+/* MEDIA sm-xl */
+/* ----------------------------------------- */
+@media (min-width: 1200px) {
+  .container, .container-sm, .container-md, .container-lg, .container-xl {
+    max-width: 1140px;
+  }
+}
+
+/* ----------------------------------------- */
+/* MEDIA sm-xxl*/
+/* ----------------------------------------- */
+
+@media (min-width: 1400px) {
+.container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+    max-width: 1320px;
+  }
+}
