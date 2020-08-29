@@ -232,11 +232,71 @@ font-family: 'Poppins', sans-serif;
   -webkit-filter: drop-shadow(2px 20px 10px #2222222c) ;
 }
 
+/* ani */
 
+#topContent .slideUp {
+  animation: Slide_Up 1.4s ease;
+  -webkit-animation: Slide_Up 1.4s ease;
+}
+
+
+
+@keyframes Slide_Up {
+    0% {
+      transform: translateY(4rem);
+}
+    100% {
+      transform: translateY(0);
+    }
+}
+
+
+#topContent .slideRight {
+  animation: Slide_Right 1.4s ease;
+  -webkit-animation: Slide_Right 1.4s ease;
+}
+
+
+
+@keyframes Slide_Right {
+        0% {
+          transform: translateX(-4rem);
+          -webkit-transform: translateX(-4rem);
+          -moz-transform: translateX(-4rem);
+          -ms-transform: translateX(-4rem);
+          -o-transform: translateX(-4rem);
+    }
+        100% {
+          transform: translateX(0);
+          -webkit-transform: translateX(0);
+          -moz-transform: translateX(0);
+          -ms-transform: translateX(0);
+          -o-transform: translateX(0);
+    }
+}
 
 /* ------------------------- */
 /* LOGOS and ABOUT */
 /* ------------------------- */
+
+#logos #owl1 .item {
+  background: var(--white); 
+  height: 100px;
+}
+
+ .appstore {
+  width: 98%;
+  height: auto;
+}
+
+ .aboutMobile {
+  background: url('/img/aboutUsBg.png');
+  background-position: left;
+  background-size: contain;
+  background-repeat: no-repeat; 
+}  
+
+
 
 
 /* ------------------------- */
@@ -259,13 +319,106 @@ font-family: 'Poppins', sans-serif;
 /* APPLICATION */
 /* ------------------------- */
 
-  /* features */
-  .bg-statistics {
-    background: url('/img/bgMap.png');
-    background-repeat: no-repeat;
-    background-position: center;
-  
-  }
+/* Owl slider mobile */
+
+/* test på color grejen */
+
+/* #owl2 .owl-carousel .owl-item.center div {  
+  opacity: 1 !important; 
+ }
+ 
+ #owl2 .owl-carousel .owl-item.first div {
+ opacity: 0.5 !important;
+}
+
+#owl2 .owl-carousel .owl-item.second div { 
+ opacity: 0.3 !important;
+} */
+
+
+/* */
+
+
+
+#owl2 .owl-item > div {
+  margin: 4% 4%;  
+  padding: 10px;
+  transition: margin 0.4s ease;
+  overflow:hidden;
+  transition:max-height 0.3s ease-out;
+  height:auto;
+  max-height:700px;
+   /* background: red;  */
+
+}
+
+#owl2 .owl-item.center > div {
+  margin: 0;
+}
+
+
+/*center+2*/
+#owl2 .owl-item.active + div + div + div + div {
+  opacity: 0.3 !important; 
+} 
+
+/*center+1*/
+
+#owl2 .owl-item.active + div + div + div  {
+  opacity: 0.6 !important; 
+} 
+
+/*center*/
+#owl2 .owl-item.active + div + div  {
+  opacity: 1 !important; 
+} 
+
+/*center-1*/
+#owl2 .owl-item.active + div   {
+  opacity: 0.6 !important; 
+} 
+
+/*center-2*/
+#owl2 .owl-item.active   {
+  opacity: 0.3 !important; 
+} 
+
+
+/*------------*/
+
+#owl2 .owl-item.center { 
+  background-image: url('/img/skal.png');
+  background-size: contain;
+ 
+} 
+
+/* 
+#owl2 .owl-item > li {
+  margin: 4% 4%;  
+  padding: 10px;
+  transition: margin 0.4s ease;
+  overflow:hidden;
+  transition:max-height 0.3s ease-out;
+  height:auto;
+  max-height:500px;
+
+
+}
+
+#owl2 .owl-item.center > li {
+  margin: 0;
+} */
+
+
+
+/* features */
+
+.bg-statistics {
+  background: url('/img/bgMap.png');
+  background-repeat: no-repeat;
+  background-position: center;
+
+}
 
 #stat h3 {
 color: var(--blue);
